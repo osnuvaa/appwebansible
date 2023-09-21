@@ -1,0 +1,304 @@
+h2,p,h3,h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.head{
+    display: flex;
+    flex-flow: column nowrap;
+    position:fixed;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.men{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    flex: 1 1 auto;
+    padding-left: 30px;
+}
+.nav{
+    flex: 5 1 auto;
+    float: right;
+    padding-right: 40px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 60px
+}
+
+.imgss{
+    position: relative;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 100px;
+}
+.imgs{
+    width: 100%; 
+    height: 600px;
+}
+.txt2{
+    padding-left: 30%;
+    text-align: right;
+    position: absolute;
+    color: white;
+    margin-right: 100px;
+}
+
+.r{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.re{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.res{
+    flex:2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.rese{
+
+    flex:1 1 100%;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.rese h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.rese img{
+    float: left;
+    width: 330px;
+    height: 180px;
+    margin-right: 20px;
+}
+.v{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.vi{
+
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.vid{
+
+    flex:2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.te{
+
+    flex:1 1 100%;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.te h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.vide{
+
+    flex:1 1 40%;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.vide iframe{
+    width:530px; 
+    height:265px;
+}
+.fot{
+
+    flex:1 1 10%;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.fot img{
+    width: 170px;
+    margin-left: 5px;
+}
+.fot h2{
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+}
+.ts{
+    color: gray;
+    font-size: 13px;
+    line-height: 20px;
+}
+.ti{
+    color: rgb(182, 182, 182);
+    font-size: 12px;
+}
+
+
+
+
+.piepag{
+    background-color: rgb(70, 70, 70);
+
+}
+.pie{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ver{
+    background-color: rgb(3, 182, 3);
+    display: flex;
+    float: left;
+    color: white;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.ver p{
+    margin-left: 50px;
+}
+
+@media all  and (max-width:800px){
+    .imgss{
+        width: 95%;
+        padding-top: 100px;
+        margin: 20px;
+    }
+    .imgs{
+        height: 400px;
+    }
+    .r,.re,.res{
+        margin: 0px;
+        padding: 0px;
+    }
+    .rese img{
+        flex-direction: column;
+        width: 100%;
+        float: none;
+        height: 350px;
+        margin-right:0px ;
+    }
+    .te{
+        flex-direction: column;
+    }
+    .fot{
+
+        flex:1 1 100%;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .fot img{
+        width: 100%;
+    }
+}
+@media all  and (max-width:400px){
+    .imgss{
+        width: 90%;
+        padding-top: 100px;
+        margin: 20px;
+        margin-right: 20px;
+    }
+    .imgs{
+        height: 500px;
+    }
+    .txt2{
+        padding-left: 200px;
+        margin-right: 20px;
+    }
+    .txt2 h2{
+        
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .txt2 p{
+        font-size: 12px;
+    }
+    .r,.re,.res{
+        margin: 0px;
+        padding: 0px;
+    }
+    .rese img{
+        flex-direction: column;
+        width: 100%;
+        float: none;
+        height: 200px;
+        margin-right:0px ;
+    }
+    .te{
+        flex-direction: column;
+    }
+    .fot{
+
+        flex:1 1 100%;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .fot img{
+        width: 100%;
+    }
+
+    .te{
+    
+        flex:1 1 100%;
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .vide{
+
+        flex:1 1 100%;
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .vide iframe{
+        width: 100%;
+        height: 200px;
+    }
+    
+}

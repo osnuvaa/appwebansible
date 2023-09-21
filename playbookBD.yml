@@ -1,0 +1,12 @@
+- hosts: all
+  become: true
+
+  tasks:
+    - name: create a new database
+      mysql_db: name=registrose state=present login_user=root login_password=" "
+    - name: add sample data to database
+      copy: src=registrose.sql dest=/tmp/registrose.sql
+
+    - name: insert sample data into database
+      mysql_db: name=registrose state=import target=/tmp/registrose.sql login_user=root login_password=" "
+        
